@@ -1,35 +1,22 @@
-# code-with-quarkus project
-
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
-
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
-
-## Running the application in dev mode
-
-You can run your application in dev mode that enables live coding using:
-```
 ./gradlew quarkusDev
-```
 
-## Packaging and running the application
+> Task :compileScala
+[Error] /home/rom1dep/tmp/quarkus.io/code-with-quarkus/src/main/scala/org/acme/HelloResource.scala:19: not found: type Person
+[Error] /home/rom1dep/tmp/quarkus.io/code-with-quarkus/src/main/scala/org/acme/HelloResource.scala:19: not found: value Person
+two errors found
 
-The application can be packaged using `./gradlew quarkusBuild`.
-It produces the `code-with-quarkus-1.0.0-SNAPSHOT-runner.jar` file in the `build` directory.
-Be aware that it’s not an _über-jar_ as the dependencies are copied into the `build/lib` directory.
+> Task :compileScala FAILED
 
-The application is now runnable using `java -jar build/code-with-quarkus-1.0.0-SNAPSHOT-runner.jar`.
+FAILURE: Build failed with an exception.
 
-If you want to build an _über-jar_, just add the `--uber-jar` option to the command line:
-```
-./gradlew quarkusBuild --uber-jar
-```
+* What went wrong:
+Execution failed for task ':compileScala'.
+> Compilation failed
 
-## Creating a native executable
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
 
-You can create a native executable using: `./gradlew buildNative`.
+* Get more help at https://help.gradle.org
 
-Or, if you don't have GraalVM installed, you can run the native executable build in a container using: `./gradlew buildNative --docker-build=true`.
-
-You can then execute your native executable with: `./build/code-with-quarkus-1.0.0-SNAPSHOT-runner`
-
-If you want to learn more about building native executables, please consult https://quarkus.io/guides/gradle-tooling#building-a-native-executable.
+BUILD FAILED in 11s
+1 actionable task: 1 executed
